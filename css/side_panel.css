@@ -1,0 +1,51 @@
+/* CSS for advanced search panel */
+
+/* Make the navigation tall enough when the panel opens */
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	position: relative;
+}
+
+/* Advanced-search panel */
+.panel {
+	width: 0;              /* Hidden initially; JavaScript changes the width */
+	position: fixed;    /* Keeps panel in the normal page layout */
+	z-index: 1;
+	top: 150px;
+	left: 0;
+	overflow-x: hidden;
+	padding: 0;
+	box-sizing: border-box;
+	transition: width 0.4s;
+}
+
+/* Content inside the panel */
+.PanelWrapper {
+	padding: 10px;
+	background-color: #191919;
+	color: #fff;
+}
+
+/* Put heading and close cross beside each other */
+.panel-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Links and buttons inside the panel */
+.panel a {
+	padding: 8px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+/* Close button */
+.closebtn {
+	position: static;
+	font-size: 36px;
+	line-height: 1;
+	padding: 0 8px;
+}
